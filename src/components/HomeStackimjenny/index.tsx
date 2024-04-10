@@ -17,7 +17,7 @@ export default function HomeStackimjenny({
       I’m Farah,Product Designer
     </>
   ),
-  somepeople = "*some people call me UI/UX Designer :p*",
+  somepeople = "*some people call me UI/UX Designer but i'm also full stack developper :p*",
   ifyoucould = "if you could combine both art and software you will have an approximate prespective of me :))",
   creative = "creative",
   ...props

@@ -1,6 +1,5 @@
 import React from "react";
 import { Img, Heading, Button, Text, Slider } from "../../components";
-import HomeColumn from "../../components/HomeColumn";
 import HomeColumnuiux from "../../components/HomeColumnuiux";
 import HomeStackimjenny from "../../components/HomeStackimjenny";
 import AliceCarousel, { EventObject, DotsItem } from "react-alice-carousel";
@@ -22,18 +21,17 @@ export default function HomePage() {
                 <div className="h-[51px] w-px bg-black-900 md:h-px md:w-[51px]" />
                 <div className="mt-[7px] flex">
                   <Text size="md" as="p" className="!text-black-900">
-                    Home
-                  </Text>
+                  <a href="https://farahtriguiportfolio.netlify.app" className="text-black hover:text-pink-500">Home</a></Text>
                 </div>
                 <Text size="md" as="p" className="mt-1.5 !text-black-900">
-                  LinkedIn
+                <a href="https://www.linkedin.com/in/farah-trigui-a4474821a/" className="text-black hover:text-pink-500">LinkedIn</a>
                 </Text>
               </div>
               <div  className="relative h-[883px] md:h-auto">
                 <div className="w-full">
                   <Slider
                     autoPlay
-                    autoPlayInterval={3500}
+                    autoPlayInterval={4000}
                     responsive={{ "0": { items: 1 }, "550": { items: 1 }, "1050": { items: 1 } }}
                     renderDotsItem={(props: DotsItem) => {
                       return props?.isActive ? (
@@ -59,7 +57,7 @@ export default function HomePage() {
                               <span className="font-urbanist font-medium text-gray-50">My</span>
                               <span className="font-urbanist font-medium text-pink_A200">Services</span>
                             </Text>
-                            <Text size="s" as="p" className="w-[44%] tracking-[-0.38px] !text-white-A700 md:w-full">
+                            <Text style={{marginTop:"20px"}} size="s" as="p" className="w-[70%] tracking-[-0.38px] !text-white-A700 md:w-full">
                               From creating visually stunning websites to designing engaging landing pages, my services
                               are aimed at maximizing your online presence and driving conversions.Let's
                               collaborate to bring your digital vision to life.
@@ -71,7 +69,7 @@ export default function HomePage() {
                                 <Img
                                   src="images/img_frame_60.png"
                                   alt="image"
-                                  className="h-[508px] w-full object-cover"
+                                  className=" w-full object-cover"
                                 />
                                 <Button
                                   color="blue_gray_900"
@@ -86,21 +84,22 @@ export default function HomePage() {
                                 <Img
                                   src="images/img_frame_60_508x416.png"
                                   alt="image_one"
-                                  className="h-[508px] w-full object-cover"
+                                  className="w-full object-cover"
                                 />
-                                <div className="absolute bottom-[0.00px] right-[0.00px] m-auto w-[27%] rotate-[90deg] rounded-[57px] bg-blue_gray-900 p-[21px] sm:p-5">
-                                  <Img
-                                    src="images/img_icon_outlined.svg"
-                                    alt="iconoutlined"
-                                    className="h-[72px] w-[72px]"
-                                  />
-                                </div>
+                                 <Button
+                                  color="blue_gray_900"
+                                  size="sm"
+                                  shape="circle"
+                                  className="absolute bottom-[0.00px] right-[0.00px] m-auto w-[114px] rotate-[90deg] !rounded-[57px]"
+                                >
+                                  <Img src="images/img_icon_outlined.svg" />
+                                </Button>
                               </div>
                               <div className="relative h-[508px] w-full md:h-auto">
                                 <Img
                                   src="images/img_frame_60_1.png"
                                   alt="image_two"
-                                  className="h-[508px] w-full object-cover"
+                                  className=" w-full object-cover"
                                 />
                                 <Button
                                   color="blue_gray_900"
@@ -128,10 +127,10 @@ export default function HomePage() {
               <span className="font-semibold text-pink_A200">work</span>
             </Heading>
           </div>
-          <div className="mt-[10px] grid w-[71%] grid-row-[repeat(auto-fill,_minmax(607px_,_1fr))] justify-center gap-[10px]">
+          <div className="mt-[10px] w-[41%] flex-col justify-center gap-[10px]">
             <div className="flex w-full flex-col items-start">
               <div className="flex h-[400px] items-start justify-center self-stretch bg-[url(/public/images/img_frame_76.png)] bg-cover bg-no-repeat px-14 py-[67px] md:h-auto md:p-5">
-                <Img style={{marginTop:"57px",marginLeft:"40px"}}
+                <Img style={{marginTop:"57px",marginLeft:"34px"}}
                   src="images/img_image_1.png"
                   alt="imageone_one"
                   className="mb-8 h-[168px] w-[57%] rounded-[5px] object-cover"
@@ -141,7 +140,7 @@ export default function HomePage() {
             </div>
             <div className="flex w-full flex-col items-start">
               <div className="flex h-[400px] items-start justify-center self-stretch bg-[url(/public/images/img_frame_76.png)] bg-cover bg-no-repeat px-14 py-[67px] md:h-auto md:p-5">
-                <Img style={{marginTop:"57px",marginLeft:"40px"}}
+                <Img style={{marginTop:"57px",marginLeft:"34px"}}
                   src="images/img_image_1_1.png"
                   alt="imageone_one"
                   className="mb-8 h-[168px] w-[57%] rounded-[5px] object-cover"
@@ -151,7 +150,7 @@ export default function HomePage() {
             </div>
             <div className="flex w-full flex-col items-start">
               <div className="flex h-[400px] items-start justify-center self-stretch bg-[url(/public/images/img_frame_76.png)] bg-cover bg-no-repeat px-14 py-[67px] md:h-auto md:p-5">
-                <Img style={{marginTop:"57px",marginLeft:"40px"}}
+                <Img style={{marginTop:"57px",marginLeft:"34px"}}
                   src="images/img_image_1_2.png"
                   alt="imageone_one"
                   className="mb-8 h-[168px] w-[57%] rounded-[5px] object-cover"
@@ -159,12 +158,17 @@ export default function HomePage() {
               </div>
               <HomeColumnuiux className="relative mb-6 ml-[26px] mt-[-38px] flex w-[72%] flex-col items-start gap-[34px] pb-[52px] md:ml-0 md:w-full md:pb-5" />
             </div>
-            <HomeColumn
-              imageoneOne="images/img_image_1_288x447.png"
-              p10nov2023="2 Avr, 2024"
-              design="eventopia website Ui/Ux"
-              className="flex w-full flex-col items-start"
-            />
+            <div className="flex w-full flex-col items-start">
+              <div className="flex h-[400px] items-start justify-center self-stretch bg-[url(/public/images/img_frame_76.png)] bg-cover bg-no-repeat px-14 py-[67px] md:h-auto md:p-5">
+                <Img style={{marginTop:"57px",marginLeft:"34px"}}
+                  src="images/img_image_1_288x447.png"
+                  alt="imageone_one"
+                  className="mb-8 h-[168px] w-[57%] rounded-[5px] object-cover"
+                />
+              </div>
+              <HomeColumnuiux className="relative mb-6 ml-[26px] mt-[-38px] flex w-[72%] flex-col items-start gap-[34px] pb-[52px] md:ml-0 md:w-full md:pb-5" />
+            </div>
+          
           </div>
         </div>
       </div>
